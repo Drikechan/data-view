@@ -1,0 +1,17 @@
+<template>
+  <div class="separator"></div>
+</template>
+<script>
+export default {
+  name: 'Separator'
+}
+</script>
+<style scoped lang="scss">
+.separator {
+  width: 100%;
+  height: 10px;
+  background: rgb(92, 88, 89);
+  filter: blur(0px);
+  backdrop-filter: blur(0px);
+}
+</style>
