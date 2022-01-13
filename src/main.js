@@ -2,8 +2,8 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.min.css';
-import ECharts from "vue-echarts/dist/index.esm";
 import dataV from '@jiaminghi/data-view';
+import VueCountTo from './components/VueCountTo/vue-countTo';
 
 
 const wmsApp = createApp(App);
@@ -13,4 +13,4 @@ const wmsApp = createApp(App);
 wmsApp.config.performance = true;
 
 
-wmsApp.use(Antd).use(dataV).component('vue-echarts', ECharts).mount('#app');
+wmsApp.use(Antd).component('count-to', VueCountTo).use(dataV).mount('#app');

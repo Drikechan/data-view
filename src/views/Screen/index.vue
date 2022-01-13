@@ -11,11 +11,11 @@
       <div class="center">
         <div class="left">
           <div class="left1">
-
+            <total-user :total-user="todayUser" :growth-last-day="growthLastDay"
+              :growth-last-month="growthLastMonth"></total-user>
           </div>
           <div class="left2">2</div>
           <div class="left3">
-<!--            <vue-echarts :option="dataOptions"></vue-echarts>-->
           </div>
         </div>
         <div class="right">1</div>
@@ -29,6 +29,8 @@ import Loading from '../../components/Loading/index.vue';
 import Container from '../../components/Container/index';
 import TopHeader from '../../components/TopHeader2/index';
 import Separator from '../../components/Separator/index';
+import TotalUser from '../../components/TotalUser/index';
+import useScreenData from "../../hooks/useScreenData";
 
 export default {
   name: 'Screen',
@@ -36,22 +38,13 @@ export default {
     Loading,
     Container,
     TopHeader,
-    Separator
+    Separator,
+    TotalUser
   },
   setup() {
 
     return {
-      dataOptions: {
-        xAxis: {
-          data: ['a', 'b', 'c', 'd']
-        },
-        yAxis: {},
-        series: [{
-          name: 'sales',
-          type: 'bar',
-          data: [10, 20, 30, 40, 50]
-        }]
-      }
+      ...useScreenData()
     }
   }
 }
@@ -93,7 +86,7 @@ export default {
         }
 
         .left1 {
-          height: 300px;
+          height: 350px;
         }
 
         .left2 {

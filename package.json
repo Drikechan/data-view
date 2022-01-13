@@ -1,5 +1,5 @@
 {
-  "name": "app-demo",
+  "name": "data-view",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,11 +11,11 @@
     "@jiaminghi/data-view": "^2.7.3",
     "ant-design-vue": "^3.0.0-alpha.14",
     "core-js": "^3.6.5",
+    "echarts": "^5.2.2",
     "sass": "^1.45.2",
     "sass-loader": "^8.0.0",
     "uuid": "^8.3.2",
-    "vue": "^3.0.0",
-    "vue-echarts": "^6.0.0"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
