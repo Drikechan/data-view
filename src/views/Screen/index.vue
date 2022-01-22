@@ -14,7 +14,9 @@
             <total-user :total-user="todayUser" :growth-last-day="growthLastDay"
               :growth-last-month="growthLastMonth"></total-user>
           </div>
-          <div class="left2">2</div>
+          <div class="left2">
+            <average-age :end-val="endAverageAge"></average-age>
+          </div>
           <div class="left3">
           </div>
         </div>
@@ -30,6 +32,7 @@ import Container from '../../components/Container/index';
 import TopHeader from '../../components/TopHeader2/index';
 import Separator from '../../components/Separator/index';
 import TotalUser from '../../components/TotalUser/index';
+import AverageAge from '../../components/AverageAge/index';
 import useScreenData from "../../hooks/useScreenData";
 
 export default {
@@ -39,7 +42,8 @@ export default {
     Container,
     TopHeader,
     Separator,
-    TotalUser
+    TotalUser,
+    AverageAge
   },
   setup() {
 
